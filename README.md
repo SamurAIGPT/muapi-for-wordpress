@@ -6,6 +6,17 @@
 
 A premium generative AI plugin that makes **[muapi.ai](https://muapi.ai)** the native image, video, audio, and text generation provider in the WordPress ecosystem. Fully integrated with the **WordPress AI Client SDK (`wp-ai-client`)** and enriches the WordPress Media Library with a complete **Media Studio** workspace.
 
+
+---
+
+## 📺 Demo Video
+
+https://github.com/SamurAIGPT/muapi-for-wordpress/assets/demo-video.mp4
+
+<p align="center">
+  <video src="assets/demo-video.mp4" controls width="800" style="max-width: 100%; border-radius: 8px; border: 1px solid #334155;"></video>
+</p>
+
 ---
 
 ## ✨ Key Features
