@@ -11,11 +11,7 @@ A premium generative AI plugin that makes **[muapi.ai](https://muapi.ai)** the n
 
 ## 📺 Demo Video
 
-https://github.com/SamurAIGPT/muapi-for-wordpress/assets/demo-video.mp4
-
-<p align="center">
-  <video src="assets/demo-video.mp4" controls width="800" style="max-width: 100%; border-radius: 8px; border: 1px solid #334155;"></video>
-</p>
+![Demo Video](https://github.com/user-attachments/assets/5d81cdf0-09e0-470f-a2e8-a2223d91d343)
 
 ---
 
