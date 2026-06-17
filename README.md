@@ -11,7 +11,9 @@ A premium generative AI plugin that makes **[muapi.ai](https://muapi.ai)** the n
 
 ## 📺 Demo Video
 
-![Demo Video](https://github.com/user-attachments/assets/5d81cdf0-09e0-470f-a2e8-a2223d91d343)
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/5d81cdf0-09e0-470f-a2e8-a2223d91d343" controls width="800" style="max-width: 100%; border-radius: 8px; border: 1px solid #334155;"></video>
+</p>
 
 ---
 
