@@ -36,9 +36,18 @@ A premium generative AI plugin that makes **[muapi.ai](https://muapi.ai)** the n
     git clone https://github.com/SamurAIGPT/muapi-for-wordpress.git
     ```
 2.  Activate the plugin through the **Plugins** menu in your WordPress dashboard.
-3.  Navigate to **Settings → Connectors** in the WordPress admin panel.
-4.  Find **MuAPI**, enter your API Key, and save.
-5.  Start creating assets right away from **Media → Generate with MuAPI**!
+3.  Go to **Settings → Connectors** in the WordPress admin panel, find **MuAPI**, enter your API Key, and save.
+4.  Start creating assets right away from **Media → Generate with MuAPI**!
+
+### 🔑 Configuration via `wp-config.php` (Recommended for staging/production)
+
+To avoid saving API credentials in the database, you can define your MuAPI key directly in `wp-config.php`:
+
+```php
+define('MUAPI_API_KEY', 'your-muapi-api-key-here');
+```
+
+Alternatively, `WP_MUAPI_API_KEY` is also supported. Defining either constant will take priority over database settings.
 
 ---
 

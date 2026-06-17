@@ -66,7 +66,14 @@ class MuApiProvider extends AbstractApiProvider {
      * @return ProviderAvailabilityInterface
      */
     protected static function createProviderAvailability(): ProviderAvailabilityInterface {
-        $api_key = get_option('connectors_ai_muapi_api_key');
+        $api_key = '';
+        if (defined('MUAPI_API_KEY')) {
+            $api_key = MUAPI_API_KEY;
+        } elseif (defined('WP_MUAPI_API_KEY')) {
+            $api_key = WP_MUAPI_API_KEY;
+        } else {
+            $api_key = get_option('connectors_ai_muapi_api_key');
+        }
         return new MuApiProviderAvailability($api_key ?: '');
     }
 

@@ -41,7 +41,15 @@ add_action('admin_init', function() {
 // Step 3: Wire authentication.
 add_action('init', function() {
     if (class_exists(AiClient::class)) {
-        $api_key = get_option('connectors_ai_muapi_api_key');
+        $api_key = '';
+        if (defined('MUAPI_API_KEY')) {
+            $api_key = MUAPI_API_KEY;
+        } elseif (defined('WP_MUAPI_API_KEY')) {
+            $api_key = WP_MUAPI_API_KEY;
+        } else {
+            $api_key = get_option('connectors_ai_muapi_api_key');
+        }
+
         if (!empty($api_key)) {
             AiClient::defaultRegistry()->setProviderRequestAuthentication(
                 'muapi',

@@ -238,7 +238,14 @@ add_action('wp_ajax_muapi_generate_media', function() {
 
 // Render Page Callback
 function wp_ai_client_is_api_key_configured() {
-    $api_key = get_option('connectors_ai_muapi_api_key');
+    $api_key = '';
+    if (defined('MUAPI_API_KEY')) {
+        $api_key = MUAPI_API_KEY;
+    } elseif (defined('WP_MUAPI_API_KEY')) {
+        $api_key = WP_MUAPI_API_KEY;
+    } else {
+        $api_key = get_option('connectors_ai_muapi_api_key');
+    }
     return !empty($api_key);
 }
 
