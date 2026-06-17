@@ -1,0 +1,8 @@
+# WordPress plugin ignore files
+.DS_Store
+Thumbs.db
+*.log
+vendor/
+node_modules/
+.vscode/
+.idea/
